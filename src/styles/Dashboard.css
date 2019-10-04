@@ -1,0 +1,57 @@
+.dashboard_cards{
+    width: 60%;
+    margin: auto;
+}
+
+.square_cards .card_square {
+    flex: 1 1;
+    height: 30vh;
+    color: white;
+    background: #3c9d9b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 12px #00000029;
+}
+
+.dashboard_cards .card_rect {
+    background: #394a6d;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 12px #00000029;
+}
+
+section.dashboard .dashboard_cards {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: none;
+  }
+  
+  .dashboard_cards .square_cards {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  
+  .dashboard_cards .card_square:nth-child(2) {
+    background: #92e5bb;
+    margin-left: 1rem;
+  }
+
+@media screen and (max-width: 600px) {
+    .dashboard_cards{
+        width: 100%;
+    }
+    
+}

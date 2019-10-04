@@ -1,0 +1,133 @@
+ .side_bar {
+    background: #52de97;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    transition: transform 0.3s;
+    min-height: 100vh;
+  }
+  
+  .side_bar #close_nav {
+    display: none;
+  }
+  
+  ul.side_nav {
+    list-style: none;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  
+  ul.side_nav li {
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+    display: flex;
+    padding: 15px;
+    color: white;
+  }
+  
+  ul.side_nav li.active {
+    background: #68f1ab;
+    color: #005a39;
+    font-weight: 600;
+  }
+  
+  ul.side_nav li:hover {
+    background: #92e5bb;
+  }
+  
+ 
+  .side_bar .sidebar_btn {
+    align-self: center;
+  }
+
+  .report_container{
+      display: flex;
+  }
+
+  ul.side_nav li p{
+    margin: 0;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  
+  nav.mobile_nav{
+    display: flex;
+    align-items: center;
+    background: #52de97;
+    padding: 15px;
+    display:none;
+  }
+
+  nav.mobile_nav h3{
+      margin: 0;
+      padding-left: 10px;
+      color:#fff;
+  }
+
+  nav.mobile_nav svg{
+    fill: #fff;
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  .header_nav {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-primary.btn-add{
+    color: #fff;
+    background-color: #394a6d;
+    border-color: #394a6d;
+    box-shadow: 0 3px 12px #00000029;
+  }
+
+  .btn-primary.btn-add:hover{
+    background-color: #22548a;
+  }
+
+  .side_bar .close-btn{
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    /*Sidebar Styles*/
+    .side_bar {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+    }
+
+    .side_bar.mobile-show{
+      transform: translateX(0%);
+    }
+
+    .side_bar.mobile-show .close-btn{
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 11px;
+    }
+
+    .close-btn svg{
+      height: 50px;
+      width: 33px;
+      fill: white;
+    }
+  
+    .side_bar #close_nav {
+      color: white;
+      align-self: flex-end;
+      padding: 0.4rem;
+      margin: 1rem 2rem 0 0;
+      display: block;
+      cursor: pointer;
+    }
+  
+    nav.mobile_nav{
+        display: flex;
+    }
+  }

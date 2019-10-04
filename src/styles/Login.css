@@ -1,0 +1,118 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.page-group {
+  width: calc(100% / 2);
+  position: relative;
+}
+
+.page-group .background-holder {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -3;
+}
+
+.page-group .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1dc367;
+  z-index: -2;
+  position: absolute;
+  opacity: 0.82;
+}
+
+.desc-text {
+  color: white;
+  padding: 65px;
+}
+
+.desc-text h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.page-group.form-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-group.form-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-group.form-area form h5 {
+  font-size: 1.6em;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.page-group.form-area .forget-pass {
+  text-align: right;
+  color: #1dc367;
+  padding-bottom: 25px;
+}
+
+.text-signup {
+  color: #1dc367;
+}
+
+button.get-started {
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.btn-link.forget-password-btn {
+  color: #1dc367;
+  padding-right: 0;
+}
+
+.btn-link.forget-password-btn:hover {
+  color: #298050;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: flex-end;
+  padding: 65px;
+}
+
+.sign-up > button {
+  background-color: #394a6d;
+  border: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .page-container {
+    justify-content: center;
+  }
+
+  .page-group.form-image {
+    display: none;
+  }
+
+  .page-group {
+    width: 80%;
+  }
+}
+
+.faq {
+  color: #1dc367;
+  font-size: 0.9rem;
+}
